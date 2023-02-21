@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ti51.Autentication"
+             Title="Login">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Icono" IconImageSource="play_store_512.png" Clicked="ToolbarItem_Clicked"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid Padding="30,30,30,30">
+                <!-- Definir las columnas del grid -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <!-- 2da columna es el doble de grande que la primera -->
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <!-- Definir las filas del grid -->
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label x:Name="lbsesion"
+                       Text="Iniciar sesión"
+                       TextColor="Black"
+                       FontSize="25"
+                       FontAttributes="Bold"
+                       Grid.Column="0"
+                       Grid.Row="0"
+                       Grid.ColumnSpan="2"
+                       HorizontalTextAlignment="Center"
+                       Margin="0,40"/>
+                <Label x:Name="lbUsuario"
+                       Text="Usuario:"
+                       TextColor="Black"
+                       FontSize="20"
+                       Grid.Column="0"
+                       Grid.Row="1"
+                       Grid.ColumnSpan="2"
+                       VerticalOptions="Center"
+                       Margin="0,40"/>
+                <Label x:Name="lbContrasenia"
+                       Text="Contraseña:"
+                       TextColor="Black"
+                       FontSize="20"
+                       Grid.Column="0"
+                       Grid.Row="2"
+                       Grid.ColumnSpan="2"
+                       VerticalOptions="Center"
+                       Margin="0,40"/>
+                <Entry x:Name="tbUsuario"
+                       Grid.Column="1"
+                       Grid.Row="1"
+                       VerticalOptions="Center"/>
+                <Entry x:Name="tbContrasenia"
+                       Grid.Column="1"
+                       Grid.Row="2"
+                       VerticalOptions="Center"/>
+                <StackLayout Grid.Row="3" Grid.ColumnSpan="2" HorizontalOptions="Center">
+                    <Button x:Name="btnIngresar"
+                            Text="Ingresar"
+                            CornerRadius="5"/>
+                    <Button x:Name="btnRegistrarse"
+                            Text="Registrarse"
+                            CornerRadius="5"
+                            Clicked="btnRegistrarse_Clicked"/>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

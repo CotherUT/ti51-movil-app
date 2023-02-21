@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ti51.Inicio">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="lbTexto"
+                   Text="Hola ti51"
+                   TextColor="White"
+                   FontSize="30"
+                   BackgroundColor="red"
+                   HorizontalTextAlignment="Center"/>
+
+            <Button x:Name="boton"
+                    Text="Da click aqui"
+                    TextColor="White"
+                    BackgroundColor="Purple"
+                    FontSize="50"
+                    HeightRequest="100"
+                    Clicked="boton_Clicked"/>
+            <Entry x:Name="tbTexto"
+                   Placeholder="Ingresa Texto"
+                   PlaceholderColor="Red"
+                   BackgroundColor="pink"
+                   TextColor="Green"
+                   FontAttributes="Bold"
+                   FontSize="Medium"
+                   ></Entry>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

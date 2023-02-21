@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ti51.MainPage">
+
+    <ScrollView>
+        <StackLayout x:Name="stkMain"
+            BackgroundColor="white">
+            <Label x:Name="lbTitulo"
+               Text="Tecnologias de la informacion"
+               TextColor="Black"
+               HorizontalTextAlignment="Center"
+               FontSize="80"
+               FontFamily="Percanthen"
+               FontAttributes="Bold"/>
+
+            <BoxView x:Name="bvDivision" 
+                 HeightRequest="10"
+                 BackgroundColor="Orange"
+                 />
+            <Label x:Name="lbSubtitulo"
+               Text="Registro de Alumnos"
+               TextColor="Black"
+               HorizontalOptions="Center"
+               FontSize="20"
+               FontFamily="Arial"
+               FontAttributes="Bold"/>
+
+            <Image x:Name="imgUT"
+               Source="UTN.png"
+               WidthRequest="120"
+               HeightRequest="120"/>
+
+            <Entry x:Name="tbNombre"
+               Placeholder="Nombre"
+               PlaceholderColor="Gray"
+               FontSize="Medium"
+               TextColor="DarkRed"
+               FontAttributes="Bold"/>
+
+            <Entry x:Name="tbDomicilio"
+               Placeholder="Domicilio:"
+               PlaceholderColor="Gray"
+               FontSize="Medium"
+               TextColor="DarkRed"
+               FontAttributes="Bold"/>
+
+            <Entry x:Name="tbTelefono"
+               Placeholder="Telefono:"
+               PlaceholderColor="Gray"
+               FontSize="Medium"
+               TextColor="DarkRed"
+               FontAttributes="Bold"/>
+
+            <Entry x:Name="tbCiudad"
+               Placeholder="Ciudad:"
+               PlaceholderColor="Gray"
+               FontSize="Medium"
+               TextColor="DarkRed"
+               FontAttributes="Bold"/>
+
+            <Label x:Name="lbFechaNac"
+               Text="Fecha de Nacimiento:"
+               TextColor="Gray"
+               FontSize="Medium"
+               FontAttributes="Bold"/>
+
+            <DatePicker x:Name="dpFechaNac"
+                    Format="dd/MM/yyyy"/>
+
+            <Label x:Name="lbSexo"
+               Text="Sexo"
+               TextColor="Gray"
+               FontSize="Medium"
+               FontAttributes="Bold"/>
+
+            <RadioButton x:Name="rbMasculino"
+                     Content="Masculino"
+                     TextColor="Gray"
+                     FontSize="Medium"
+                     FontAttributes="Bold"/>
+
+            <RadioButton x:Name="rbFemenino"
+                     Content="Femenino"
+                     TextColor="Gray"
+                     FontSize="Medium"
+                     FontAttributes="Bold"/>
+
+            <Entry x:Name="tbUsuario"
+               Placeholder="Usuario"
+               PlaceholderColor="Gray"
+               TextColor="DarkRed"
+               FontSize="Medium"
+               FontAttributes="Bold"/>
+
+            <Entry x:Name="tbPassword"
+               Placeholder="Password"
+               PlaceholderColor="Gray"
+               TextColor="DarkRed"
+               FontSize="Medium"
+               FontAttributes="Bold"/>
+
+            <Editor x:Name="edObservaciones"
+                    Placeholder="Observaciones"
+                    PlaceholderColor="Gray"
+                    TextColor="DarkRed"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    HeightRequest="150"
+                    IsSpellCheckEnabled="True"
+                    IsTextPredictionEnabled="True"/>
+
+            <StackLayout Orientation="Horizontal" Margin="0,0,0,25">
+                <Button x:Name="btnGuardar"
+                        Text="Guardar"
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        WidthRequest="200"
+                        CornerRadius="5"
+                        Clicked="btnGuardar_Clicked"/>
+
+                <Button x:Name="brnRegresar"
+                        Text="Regresar"
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        WidthRequest="200"
+                        CornerRadius="5"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+    
+</ContentPage>
