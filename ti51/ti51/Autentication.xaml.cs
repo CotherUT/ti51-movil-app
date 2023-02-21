@@ -24,7 +24,7 @@ namespace ti51
 
         private void ToolbarItem_Clicked(object sender, EventArgs e)
         {
-
+			Navigation.PushAsync(new MainPage());
         }
     }
 }

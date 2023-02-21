@@ -58,14 +58,16 @@
                        Grid.Column="1"
                        Grid.Row="2"
                        VerticalOptions="Center"/>
-                <StackLayout Grid.Row="3" Grid.ColumnSpan="2" HorizontalOptions="Center">
+                <StackLayout Grid.Row="3" Grid.ColumnSpan="2" HorizontalOptions="Center" WidthRequest="300">
                     <Button x:Name="btnIngresar"
                             Text="Ingresar"
-                            CornerRadius="5"/>
+                            CornerRadius="5"
+                            BackgroundColor="lightgreen"/>
                     <Button x:Name="btnRegistrarse"
                             Text="Registrarse"
                             CornerRadius="5"
-                            Clicked="btnRegistrarse_Clicked"/>
+                            Clicked="btnRegistrarse_Clicked"
+                            BackgroundColor="LightBlue"/>
                 </StackLayout>
             </Grid>
         </StackLayout>
