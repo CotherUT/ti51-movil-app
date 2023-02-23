@@ -18,21 +18,20 @@
                                 <RowDefinition/>
                             </Grid.RowDefinitions>
                             <Label x:Name="lblNombre"
-                                   Text="{Binding Nombre}"
+                                   Text="{Binding Nombre, StringFormat='Nombre: {0}'}"
                                    Grid.Column="0"
                                    Grid.Row="0"
-                                   Grid.ColumnSpan="3"
                                    FontAttributes="bold"
                                    TextColor="RoyalBlue"
                                    HorizontalTextAlignment="Center"></Label>
                             <Label x:Name="lblCarrera"
-                                   Text="{Binding Carrera}"
+                                   Text="{Binding Carrera, StringFormat='Carrera: {0}'}"
                                    Grid.Column="1"
                                    Grid.Row="0"
                                    FontAttributes="bold"
                                    HorizontalTextAlignment="Center"></Label>
                             <Label x:Name="lblClave"
-                                   Text="{Binding Clave}"
+                                   Text="{Binding Clave, StringFormat='Clave: {0}'}"
                                    Grid.Column="2"
                                    Grid.Row="0"
                                    FontAttributes="bold"
