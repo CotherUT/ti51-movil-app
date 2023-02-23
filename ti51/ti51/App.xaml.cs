@@ -12,7 +12,7 @@ namespace ti51
 
             MainPage = new MainPage();
             MainPage = new Autentication();
-            MainPage = new NavigationPage(new Materias());
+            MainPage = new NavigationPage(new Profesores());
             //MainPage = new Inicio();
         }
 
