@@ -60,10 +60,12 @@
                        VerticalOptions="Center"/>
                 <StackLayout Grid.Row="3" Grid.ColumnSpan="2" HorizontalOptions="Center" WidthRequest="300">
                     <Button x:Name="btnIngresar"
+                            Clicked="btnIngresar_Clicked"
                             Text="Ingresar"
                             CornerRadius="5"
                             BackgroundColor="lightgreen"/>
                     <Button x:Name="btnRegistrarse"
+                            Clicked="btnRegistrarse_Clicked_1"
                             Text="Registrarse"
                             CornerRadius="5"
                             Clicked="btnRegistrarse_Clicked"

@@ -13,11 +13,15 @@ namespace ti51
 	public partial class Menu : ContentPage
 	{
 		//Creamos el objeto de tipo lista de clase
-		public List<MenuCLS> Items { get; set; }
+		public List<MenuCLS> listaMenu { get; set; }
 
 		public Menu ()
 		{
 			InitializeComponent ();
+
+			listaMenu= new List<MenuCLS> ();
+
+
 		}
 	}
 }
