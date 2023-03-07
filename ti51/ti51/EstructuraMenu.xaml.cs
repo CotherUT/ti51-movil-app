@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace ti51
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class EstructuraMenu : ContentPage
+	public partial class EstructuraMenu : FlyoutPage
 	{
 		public EstructuraMenu ()
 		{

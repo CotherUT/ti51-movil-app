@@ -14,7 +14,7 @@ namespace ti51
 	public partial class Autentication : ContentPage
 	{
         public UsuarioCLS obj_loguin { get; set; } = new UsuarioCLS();
-        Autentication()
+        public Autentication()
 		{
 			InitializeComponent ();
             BindingContext = this;
@@ -33,7 +33,7 @@ namespace ti51
 
         private void btnIngresar_Clicked(object sender, EventArgs e)
         {
-            if (obj_loguin.usuario == "Administrador" && obj_loguin.password == "123")
+            if (obj_loguin.usuario == "admin" && obj_loguin.password == "123")
             {
                 Application.Current.MainPage = new EstructuraMenu();
             }

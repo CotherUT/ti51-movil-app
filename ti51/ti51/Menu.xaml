@@ -5,9 +5,30 @@
              x:Class="ti51.Menu">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Bienvenido"
+                   FontAttributes="Bold"
+                   FontFamily="mia"
+                   FontSize="Large"/>
+            <ListView ItemsSource="{Binding listaMenu}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <StackLayout Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
+                                    <Image Source="{Binding icono}"/>
+                                    <Label Text="{Binding opcion}"/>
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

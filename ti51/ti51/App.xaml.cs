@@ -9,11 +9,7 @@ namespace ti51
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
-            MainPage = new Autentication();
             MainPage = new NavigationPage(new Autentication());
-            //MainPage = new Inicio();
         }
 
         protected override void OnStart()

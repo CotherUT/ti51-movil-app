@@ -9,20 +9,21 @@
     <ContentPage.Content>
         <StackLayout>
             <Grid Padding="30,30,30,30">
-                <!-- Definir las columnas del grid -->
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <!-- 2da columna es el doble de grande que la primera -->
-                    <ColumnDefinition Width="2*"/>
-                </Grid.ColumnDefinitions>
-                <!-- Definir las filas del grid -->
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <Label x:Name="lbsesion"
+                <Grid BindingContext="{Binding obj_loguin}">
+                    <!-- Definir las columnas del grid -->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <!-- 2da columna es el doble de grande que la primera -->
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <!-- Definir las filas del grid -->
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="lbsesion"
                        Text="Iniciar sesión"
                        TextColor="Black"
                        FontSize="25"
@@ -32,7 +33,7 @@
                        Grid.ColumnSpan="2"
                        HorizontalTextAlignment="Center"
                        Margin="0,40"/>
-                <Label x:Name="lbUsuario"
+                    <Label x:Name="lbUsuario"
                        Text="Usuario:"
                        TextColor="Black"
                        FontSize="20"
@@ -41,7 +42,7 @@
                        Grid.ColumnSpan="2"
                        VerticalOptions="Center"
                        Margin="0,40"/>
-                <Label x:Name="lbContrasenia"
+                    <Label x:Name="lbContrasenia"
                        Text="Contraseña:"
                        TextColor="Black"
                        FontSize="20"
@@ -50,27 +51,30 @@
                        Grid.ColumnSpan="2"
                        VerticalOptions="Center"
                        Margin="0,40"/>
-                <Entry x:Name="tbUsuario"
+                    <Entry x:Name="tbUsuario"
+                       Text="{Binding usuario}"
                        Grid.Column="1"
                        Grid.Row="1"
                        VerticalOptions="Center"/>
-                <Entry x:Name="tbContrasenia"
+                    <Entry x:Name="tbContrasenia"
+                       Text="{Binding password}"
                        Grid.Column="1"
                        Grid.Row="2"
                        VerticalOptions="Center"/>
-                <StackLayout Grid.Row="3" Grid.ColumnSpan="2" HorizontalOptions="Center" WidthRequest="300">
-                    <Button x:Name="btnIngresar"
+                    <StackLayout Grid.Row="3" Grid.ColumnSpan="2" HorizontalOptions="Center" WidthRequest="300">
+                        <Button x:Name="btnIngresar"
                             Clicked="btnIngresar_Clicked"
                             Text="Ingresar"
                             CornerRadius="5"
                             BackgroundColor="lightgreen"/>
-                    <Button x:Name="btnRegistrarse"
-                            Clicked="btnRegistrarse_Clicked_1"
+                        <Button x:Name="btnRegistrarse"
                             Text="Registrarse"
                             CornerRadius="5"
                             Clicked="btnRegistrarse_Clicked"
                             BackgroundColor="LightBlue"/>
-                </StackLayout>
+                    </StackLayout>
+
+                </Grid>
             </Grid>
         </StackLayout>
     </ContentPage.Content>

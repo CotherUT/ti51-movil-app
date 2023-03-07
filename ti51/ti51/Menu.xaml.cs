@@ -21,7 +21,10 @@ namespace ti51
 
 			listaMenu= new List<MenuCLS> ();
 
-
-		}
+			listaMenu.Add(new MenuCLS { icono = "ic_materias", opcion = "Materias" });
+			listaMenu.Add(new MenuCLS { icono = "ic_profesores", opcion = "Profesores" });
+			listaMenu.Add(new MenuCLS { icono = "ic_carreras", opcion = "Carreras" });
+			BindingContext = this;
+        }
 	}
 }
