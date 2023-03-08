@@ -8,7 +8,7 @@
     </FlyoutPage.Flyout>
 
     <FlyoutPage.Detail>
-        <NavigationPage>
+        <NavigationPage x:Name="Navegacion">
             <x:Arguments>
                 <Pages:Detalle></Pages:Detalle>
             </x:Arguments>

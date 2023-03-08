@@ -26,5 +26,21 @@ namespace ti51
 			listaMenu.Add(new MenuCLS { icono = "ic_carreras", opcion = "Carreras" });
 			BindingContext = this;
         }
-	}
+
+        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+			
+			MenuCLS obj_menu = (MenuCLS)e.SelectedItem;
+			switch(obj_menu.opcion)
+			{
+				case "Materias": 
+					App.Navigate.PushAsync(new Materias()); break;
+				case "Profesores":
+					App.Navigate.PushAsync(new Profesores()); break;
+				case "Carreras":
+					App.Navigate.PushAsync(new Carreras()); break;
+			}
+			App.MenuApp.IsPresented = false; //Oculta el menu cuando el usuario le da click a alguna opcion
+        }
+    }
 }

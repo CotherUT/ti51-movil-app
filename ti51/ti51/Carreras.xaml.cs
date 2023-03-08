@@ -10,14 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace ti51
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class EstructuraMenu : FlyoutPage
+	public partial class Carreras : ContentPage
 	{
-		public EstructuraMenu ()
+		public Carreras ()
 		{
 			InitializeComponent ();
-
-			App.Navigate = Navegacion;
-			App.MenuApp = this;
 		}
 	}
 }

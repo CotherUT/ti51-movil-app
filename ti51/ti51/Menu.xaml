@@ -9,7 +9,7 @@
                    FontAttributes="Bold"
                    FontFamily="mia"
                    FontSize="Large"/>
-            <ListView ItemsSource="{Binding listaMenu}">
+            <ListView ItemsSource="{Binding listaMenu}" Margin="0,15" ItemSelected="ListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

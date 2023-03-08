@@ -6,6 +6,9 @@ namespace ti51
 {
     public partial class App : Application
     {
+        public static NavigationPage Navigate { get; internal set; }
+        public static EstructuraMenu MenuApp { get; internal set; }
+
         public App()
         {
             InitializeComponent();
