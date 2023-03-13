@@ -24,7 +24,8 @@ namespace ti51
 			listaMenu.Add(new MenuCLS { icono = "ic_materias", opcion = "Materias" });
 			listaMenu.Add(new MenuCLS { icono = "ic_profesores", opcion = "Profesores" });
 			listaMenu.Add(new MenuCLS { icono = "ic_carreras", opcion = "Carreras" });
-			BindingContext = this;
+			listaMenu.Add(new MenuCLS { icono = "ic_carreras", opcion = "Galeria" });
+            BindingContext = this;
         }
 
         private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -39,7 +40,9 @@ namespace ti51
 					App.Navigate.PushAsync(new Profesores()); break;
 				case "Carreras":
 					App.Navigate.PushAsync(new Carreras()); break;
-			}
+                case "Galeria":
+                    App.Navigate.PushAsync(new Galeria()); break;
+            }
 			App.MenuApp.IsPresented = false; //Oculta el menu cuando el usuario le da click a alguna opcion
         }
     }
