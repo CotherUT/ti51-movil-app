@@ -66,7 +66,9 @@
                FontAttributes="Bold"/>
 
             <DatePicker x:Name="dpFechaNac"
-                    Format="dd/MM/yyyy"/>
+                    Format="dd/MM/yyyy"
+                        MinimumDate="01/01/2013"
+                        MaximumDate="12/12/2024"/>
 
             <Label x:Name="lbSexo"
                Text="Sexo"
