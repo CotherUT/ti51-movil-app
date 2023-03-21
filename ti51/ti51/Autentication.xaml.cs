@@ -47,5 +47,20 @@ namespace ti51
         {
 
         }
+
+        private void cbRecordar_CheckedChanged(object sender, CheckedChangedEventArgs e)
+        {
+            //Click en el checkbox
+            if(cbRecordar.IsChecked)
+            {
+                obj_loguin.usuario = "admin";
+                obj_loguin.password= "123";
+            }
+            else
+            {
+                obj_loguin.usuario= null;
+                obj_loguin.password = null;
+            }
+        }
     }
 }

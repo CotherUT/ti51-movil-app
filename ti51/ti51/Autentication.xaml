@@ -22,6 +22,7 @@
                         <RowDefinition/>
                         <RowDefinition/>
                         <RowDefinition/>
+                        <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Label x:Name="lbsesion"
                        Text="Iniciar sesión"
@@ -73,7 +74,18 @@
                             Clicked="btnRegistrarse_Clicked"
                             BackgroundColor="LightBlue"/>
                     </StackLayout>
-
+                    <CheckBox x:Name="cbRecordar"
+                              Grid.Column="0"
+                              Grid.Row="4"
+                              HorizontalOptions="End"
+                              CheckedChanged="cbRecordar_CheckedChanged"/>
+                    <Label Text="Recordar usuario"
+                           Grid.Column="1"
+                           Grid.Row="4"
+                           VerticalTextAlignment="Center"
+                           TextColor="Gray"
+                           FontAttributes="Bold"
+                           FontSize="Medium"/>
                 </Grid>
             </Grid>
         </StackLayout>
